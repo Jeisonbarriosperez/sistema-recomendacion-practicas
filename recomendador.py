@@ -1,8 +1,8 @@
 """
 Motor del sistema de recomendación de sitios de práctica.
 
-El coordinador escoge un estudiante y el motor le devuelve las organizaciones
-más adecuadas, en cuatro pasos:
+Construimos este motor para apoyar al coordinador: él escoge un estudiante y el
+sistema le devuelve las organizaciones más adecuadas, en cuatro pasos:
     1. Filtros:  reglas del lineamiento que deciden si una organización puede participar.
     2. Afinidad: cobertura de habilidades (qué parte de lo que pide la organización tiene el estudiante).
     3. Puntaje:  suma ponderada de cinco criterios (máximo 100 puntos).
@@ -18,9 +18,9 @@ import sys
 import pandas as pd
 
 CARPETA_DATOS = Path(__file__).parent / "datos"
-FECHA_REFERENCIA = date(2026, 11, 24)   # fecha en la que se revisa si el convenio está vigente
+FECHA_REFERENCIA = date(2026, 11, 24)   # con esta fecha revisamos si el convenio sigue vigente
 
-# Pesos por defecto. Deben sumar 100.
+# Pesos que definimos por defecto. Siempre deben sumar 100.
 PESOS = {
     "afinidad": 40,      # cobertura de habilidades
     "desempeno": 25,     # cómo les ha ido a los practicantes anteriores en esa organización
@@ -54,18 +54,26 @@ def a_lista(texto):
     return [parte.strip() for parte in str(texto).split(";") if parte.strip()]
 
 
-def cargar_datos(carpeta=CARPETA_DATOS):
-    estudiantes = pd.read_csv(carpeta / "estudiantes.csv", dtype=str).fillna("")
-    organizaciones = pd.read_csv(carpeta / "organizaciones.csv", dtype=str).fillna("")
-    historial = pd.read_csv(carpeta / "historial_practicas.csv")
+def preparar_datos(estudiantes, organizaciones, historial):
+    """Dejamos las tres tablas listas para el motor: tipos de dato, cupos libres y desempeño histórico."""
+    estudiantes = estudiantes.fillna("").astype(str)
+    organizaciones = organizaciones.fillna("").copy()
+    historial = historial.copy()
 
     for col in ["cupos_totales", "cupos_ocupados"]:
         organizaciones[col] = organizaciones[col].astype(int)
     organizaciones["cupos_libres"] = organizaciones["cupos_totales"] - organizaciones["cupos_ocupados"]
     organizaciones["convenio_vigente_hasta"] = pd.to_datetime(organizaciones["convenio_vigente_hasta"]).dt.date
+    historial["nota_final"] = historial["nota_final"].astype(float)
 
     organizaciones = organizaciones.merge(desempeno_por_organizacion(historial), on="id_org", how="left")
     return Datos(estudiantes, organizaciones, historial)
+
+
+def cargar_datos(carpeta=CARPETA_DATOS):
+    return preparar_datos(pd.read_csv(carpeta / "estudiantes.csv", dtype=str),
+                          pd.read_csv(carpeta / "organizaciones.csv"),
+                          pd.read_csv(carpeta / "historial_practicas.csv"))
 
 
 def desempeno_por_organizacion(historial):
@@ -83,8 +91,8 @@ def desempeno_por_organizacion(historial):
 # ---------------------------------------------------------------- paso 1: filtros
 
 def motivos_exclusion(estudiante, org, fecha=FECHA_REFERENCIA):
-    """Devuelve la lista de reglas que la organización no cumple para este estudiante.
-    Lista vacía = la organización es elegible."""
+    """Revisamos las reglas del lineamiento y devolvemos las que la organización no cumple.
+    Si la lista queda vacía, la organización puede participar en el ranking."""
     motivos = []
     if estudiante["programa"] not in a_lista(org["programas_aceptados"]):
         motivos.append(f"no recibe estudiantes de {estudiante['programa']}")
@@ -98,7 +106,7 @@ def motivos_exclusion(estudiante, org, fecha=FECHA_REFERENCIA):
 
 
 def requisitos_estudiante(estudiante):
-    """Requisitos personales: si el estudiante no los cumple, no se le recomienda ningún sitio."""
+    """Requisitos del propio estudiante. Si no los cumple, no tiene sentido recomendarle ningún sitio."""
     faltantes = []
     if estudiante["prerrequisitos_academicos"] != "Sí":
         faltantes.append("no cumple los prerrequisitos académicos")
@@ -110,8 +118,9 @@ def requisitos_estudiante(estudiante):
 # ---------------------------------------------------------------- paso 2: afinidad
 
 def cobertura(habilidades_estudiante, habilidades_requeridas):
-    """Qué fracción de las habilidades que pide la organización tiene el estudiante.
-    Va de 0 (ninguna) a 1 (todas). Las habilidades extra del estudiante no lo perjudican."""
+    """Medimos qué parte de las habilidades que pide la organización tiene el estudiante.
+    Va de 0 (ninguna) a 1 (todas). Escogimos esta medida porque las habilidades extra del
+    estudiante no lo perjudican, cosa que sí pasaba con Jaccard."""
     requeridas = set(habilidades_requeridas)
     if not requeridas:
         return 0.0
@@ -119,8 +128,8 @@ def cobertura(habilidades_estudiante, habilidades_requeridas):
 
 
 def jaccard(a, b):
-    """Alternativa evaluada y descartada: habilidades en común / habilidades distintas entre los dos.
-    Se descartó porque castiga al estudiante que tiene habilidades adicionales."""
+    """Alternativa que evaluamos y descartamos: habilidades en común / habilidades distintas entre los dos.
+    La dejamos en el código para la comparación: castiga al estudiante que sabe más cosas."""
     a, b = set(a), set(b)
     if not a and not b:
         return 0.0
@@ -130,8 +139,8 @@ def jaccard(a, b):
 # ---------------------------------------------------------------- paso 3: puntaje
 
 def proporcion_desempeno(org):
-    """De 0 a 1. Nota promedio 3.0 = 0 y 5.0 = 1, y se descuentan los cambios de sitio.
-    Si la organización no tiene historial se le da un valor neutro (0.5)."""
+    """De 0 a 1. Tomamos la nota promedio (3.0 vale 0 y 5.0 vale 1) y descontamos los cambios de sitio.
+    A una organización sin historial le damos un valor neutro (0.5) para no premiarla ni castigarla."""
     if pd.isna(org["nota_promedio"]):
         return 0.5
     nota = min(1.0, max(0.0, (org["nota_promedio"] - 3.0) / 2.0))
@@ -140,7 +149,7 @@ def proporcion_desempeno(org):
 
 
 def proporcion_preferencias(estudiante, org):
-    """Mitad modalidad, mitad sector. La modalidad híbrida cuenta como coincidencia parcial."""
+    """Repartimos mitad modalidad y mitad sector. La modalidad híbrida la contamos como coincidencia parcial."""
     preferida = estudiante["modalidad_preferida"]
     if preferida in ("Indiferente", org["modalidad"]):
         modalidad = 1.0
@@ -153,7 +162,8 @@ def proporcion_preferencias(estudiante, org):
 
 
 def calcular_puntos(estudiante, org, pesos=PESOS):
-    """Puntos de cada criterio. Cada regla da una proporción de 0 a 1 que se multiplica por su peso."""
+    """Cada regla da una proporción de 0 a 1 y la multiplicamos por el peso del criterio.
+    Así, si cambian los pesos, las reglas siguen siendo las mismas."""
     proporciones = {
         "afinidad": cobertura(a_lista(estudiante["habilidades"]), a_lista(org["habilidades_requeridas"])),
         "desempeno": proporcion_desempeno(org),
@@ -207,7 +217,7 @@ def recomendar(id_estudiante, datos, pesos=PESOS):
 # ---------------------------------------------------------------- paso 4: explicación
 
 def detalle_puntaje(estudiante, org_fila, pesos=PESOS):
-    """De dónde sale cada punto. Devuelve una fila por criterio: criterio, detalle, puntos y máximo."""
+    """Armamos la explicación de cada punto: una fila por criterio con el detalle, los puntos y el máximo."""
     habilidades_est = set(a_lista(estudiante["habilidades"]))
     habilidades_org = set(a_lista(org_fila["habilidades_requeridas"]))
     comunes = sorted(habilidades_est & habilidades_org)

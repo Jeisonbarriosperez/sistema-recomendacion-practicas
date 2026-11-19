@@ -11,7 +11,7 @@ import recomendador as motor
 
 st.set_page_config(page_title="Recomendación de sitios de práctica", layout="wide")
 
-# Colores de los cinco criterios: una sola familia de tonos, del más importante al menos.
+# Para los cinco criterios escogimos una sola familia de tonos, del más importante al menos importante.
 COLOR_CRITERIO = {
     "afinidad": "#16425B",
     "desempeno": "#2F6F8A",
@@ -79,7 +79,7 @@ def restablecer_pesos():
 
 
 def normalizar(pesos):
-    """Ajusta los pesos para que sumen 100 manteniendo la proporción que eligió el usuario."""
+    """Si los controles no suman 100, ajustamos los pesos manteniendo la proporción que eligió el coordinador."""
     total = sum(pesos.values())
     if total == 0:
         return dict(motor.PESOS)
@@ -89,7 +89,7 @@ def normalizar(pesos):
 # ---------------------------------------------------------------- piezas HTML
 
 def html_barra(detalle):
-    """Barra horizontal partida en los cinco criterios: el largo de cada tramo son los puntos obtenidos."""
+    """Dibujamos una barra partida en los cinco criterios: el largo de cada tramo son los puntos obtenidos."""
     tramos = "".join(
         f'<div style="width:{d["puntos"]}%; background:{COLOR_CRITERIO[d["criterio"]]}" '
         f'title="{escape(d["nombre"])}: {d["puntos"]:.1f} de {d["maximo"]:.4g}"></div>'

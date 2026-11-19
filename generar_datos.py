@@ -1,10 +1,10 @@
 """
 Genera los datos sintéticos del prototipo.
 
-No existen datos reales de CECAR disponibles para el proyecto, así que se crean
-datos ficticios pero coherentes con el lineamiento de práctica (programas,
-convenios, cupos, prerrequisitos, MOOC y conflicto de interés).
-Los nombres de personas y organizaciones son inventados.
+Como no tuvimos acceso a datos reales de CECAR, creamos datos ficticios pero
+coherentes con el lineamiento de práctica (programas, convenios, cupos,
+prerrequisitos, MOOC y conflicto de interés). Los nombres de personas y
+organizaciones son inventados.
 
 Uso:  python generar_datos.py
 Salida: datos/estudiantes.csv, datos/organizaciones.csv, datos/historial_practicas.csv
@@ -15,7 +15,7 @@ import random
 
 import pandas as pd
 
-SEMILLA = 2026          # misma semilla = mismos datos cada vez que se ejecute
+SEMILLA = 2026          # usamos semilla fija para que los datos salgan iguales cada vez
 CARPETA = Path(__file__).parent / "datos"
 FECHA_REFERENCIA = date(2026, 11, 24)
 
@@ -77,7 +77,7 @@ def generar_organizaciones(rng):
     for i, (nombre, sector, programas) in enumerate(ORGANIZACIONES, start=1):
         posibles = sorted({h for p in programas for h in HABILIDADES_POR_PROGRAMA[p]})
         cupos = rng.randint(1, 4)
-        # unas pocas organizaciones quedan con el convenio vencido o sin cupos, como pasa en la realidad
+        # dejamos algunas organizaciones con el convenio vencido o sin cupos, como pasa en la realidad
         dias_convenio = rng.choice([-60, -15] + [rng.randint(90, 700) for _ in range(10)])
         filas.append({
             "id_org": f"ORG-{i:02d}",
@@ -99,7 +99,7 @@ def generar_estudiantes(rng, organizaciones, cantidad=80):
     for i in range(1, cantidad + 1):
         programa = rng.choice(PROGRAMAS)
         propias = rng.sample(HABILIDADES_POR_PROGRAMA[programa], rng.randint(3, 5))
-        # algunas habilidades de otros programas, para que el perfil no sea perfecto
+        # agregamos habilidades de otros programas para que los perfiles no sean perfectos
         otras = [h for p in PROGRAMAS if p != programa for h in HABILIDADES_POR_PROGRAMA[p]]
         habilidades = sorted(set(propias + rng.sample(otras, rng.randint(0, 2))))
         parientes = rng.choice(organizaciones["id_org"].tolist()) if rng.random() < 0.08 else ""
@@ -120,7 +120,7 @@ def generar_estudiantes(rng, organizaciones, cantidad=80):
 
 
 def generar_historial(rng, organizaciones, cantidad=300):
-    # cada organización tiene una "calidad" oculta que explica sus resultados pasados
+    # a cada organización le asignamos una "calidad" oculta que explica sus resultados pasados
     calidad = {org: rng.uniform(3.4, 4.7) for org in organizaciones["id_org"]}
     periodos = ["2024-1", "2024-2", "2025-1", "2025-2", "2026-1"]
     filas = []

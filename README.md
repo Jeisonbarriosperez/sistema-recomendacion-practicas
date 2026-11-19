@@ -8,6 +8,7 @@ Le recomienda al coordinador de prácticas los sitios más adecuados para cada e
 - `generar_datos.py` – crea los datos con semilla fija (siempre salen iguales).
 - `recomendador.py` – motor: filtros, cobertura de habilidades, puntaje y explicación.
 - `app.py` – interfaz web en Streamlit.
+- `tests/` – pruebas automáticas del motor.
 
 ## Instalación (Windows, PowerShell)
 ```
@@ -20,4 +21,10 @@ pip install -r requirements.txt
 ```
 streamlit run app.py              # interfaz web
 python recomendador.py EST-011    # versión por consola
+```
+
+
+## Pruebas
+```
+python -m pytest -v
 ```
