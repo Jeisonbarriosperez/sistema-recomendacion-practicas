@@ -1,0 +1,26 @@
+id_org,nombre,sector,municipio,modalidad,programas_aceptados,habilidades_requeridas,cupos_totales,cupos_ocupados,convenio_vigente_hasta
+ORG-01,Soluciones Digitales del Caribe S.A.S.,Tecnología,Corozal,Presencial,Ingeniería de Sistemas,Bases de datos;Análisis de datos;Ciberseguridad;Redes,1,0,2028-09-30
+ORG-02,Red Sabana Telecomunicaciones,Tecnología,Sampués,Presencial,Ingeniería de Sistemas,Soporte técnico;Bases de datos;Python;Java,3,2,2028-07-31
+ORG-03,CodeSur Software Lab,Tecnología,San Marcos,Híbrida,Ingeniería de Sistemas,Soporte técnico;Desarrollo web;Java;Ciberseguridad,3,2,2028-09-11
+ORG-04,Clínica Santa Lucía del Sinú,Salud,Sincelejo,Presencial,Ingeniería de Sistemas;Administración de Empresas,Ciberseguridad;Redes;Atención al cliente;Planeación estratégica,4,3,2027-07-04
+ORG-05,Distribuidora La Sabana,Comercio,Sincelejo,Presencial,Administración de Empresas;Ingeniería Industrial,Recursos humanos;Producción;Marketing;Planeación estratégica,3,1,2028-01-03
+ORG-06,Supermercados El Golfo,Comercio,San Marcos,Presencial,Administración de Empresas;Contaduría Pública,Planeación estratégica;Tributaria;Recursos humanos;Logística,2,0,2028-05-11
+ORG-07,Cooperativa Agropecuaria de Sucre,Servicios,Sincelejo,Presencial,Administración de Empresas;Contaduría Pública,Marketing;Logística;Análisis financiero;Tributaria,4,1,2026-09-25
+ORG-08,Contadores Asociados Morrosquillo,Financiero,Tolú,Remota,Contaduría Pública,Costos;Tributaria;Excel avanzado;Auditoría,1,0,2028-07-09
+ORG-09,Banco Cooperativo Sabanero,Financiero,Corozal,Presencial,Contaduría Pública;Administración de Empresas,Análisis financiero;Excel avanzado;Tributaria;Análisis de datos,1,0,2027-08-04
+ORG-10,Fondo de Empleados del Caribe,Financiero,Sampués,Híbrida,Contaduría Pública,Contabilidad;Excel avanzado;Software contable;Auditoría,1,0,2027-06-26
+ORG-11,Lácteos La Pradera,Manufactura,San Marcos,Híbrida,Ingeniería Industrial,Gestión de calidad;Seguridad industrial;Logística;Análisis de datos,4,1,2027-09-10
+ORG-12,Arrocera San Marcos,Manufactura,Sincelejo,Presencial,Ingeniería Industrial;Contaduría Pública,Gestión de proyectos;Tributaria;Gestión de calidad;Costos,2,1,2027-08-05
+ORG-13,Concretos y Prefabricados Sucre,Manufactura,Tolú,Presencial,Ingeniería Industrial,Excel avanzado;Análisis de datos;Seguridad industrial;Costos,4,1,2027-05-29
+ORG-14,Transportes Rápido Sabanero,Servicios,San Marcos,Presencial,Ingeniería Industrial;Administración de Empresas,Logística;Costos;Atención al cliente;Análisis de datos,1,0,2026-11-09
+ORG-15,Hotel Brisas de Tolú,Servicios,Sincelejo,Presencial,Administración de Empresas,Logística;Gestión de proyectos;Análisis de datos;Marketing,1,1,2026-11-09
+ORG-16,Secretaría de Planeación Municipal,Gobierno,Sampués,Presencial,Ingeniería de Sistemas;Administración de Empresas,Java;Gestión de proyectos;Planeación estratégica;Atención al cliente,1,0,2028-09-18
+ORG-17,Instituto Departamental de Tránsito,Gobierno,Sincelejo,Presencial,Ingeniería de Sistemas;Contaduría Pública,Análisis de datos;Excel avanzado;Contabilidad;Bases de datos,4,0,2027-03-18
+ORG-18,Empresa de Servicios Públicos AguaClara,Servicios,Sincelejo,Presencial,Ingeniería de Sistemas;Ingeniería Industrial,Gestión de calidad;Costos;Redes;Soporte técnico,2,0,2027-06-27
+ORG-19,Farmacias Vida Sana,Salud,Sampués,Presencial,Administración de Empresas;Contaduría Pública,Contabilidad;Costos;Atención al cliente;Nómina,2,0,2028-08-29
+ORG-20,Centro Médico Corozal,Salud,Tolú,Presencial,Contaduría Pública;Ingeniería de Sistemas,Ciberseguridad;Soporte técnico;Python;Costos,1,0,2027-11-20
+ORG-21,Agencia de Marketing Ola Creativa,Servicios,Sampués,Presencial,Administración de Empresas,Excel avanzado;Marketing;Gestión de proyectos;Atención al cliente,2,0,2028-09-05
+ORG-22,Taller Metalmecánico El Progreso,Manufactura,Tolú,Presencial,Ingeniería Industrial,Análisis de datos;Gestión de proyectos;Costos;Producción,3,0,2027-07-13
+ORG-23,Data Insight Consultores,Tecnología,Sincelejo,Presencial,Ingeniería de Sistemas;Ingeniería Industrial,Python;Logística;Producción;Costos,4,2,2027-05-20
+ORG-24,Almacenes Ferreteros del Sinú,Comercio,Sincelejo,Híbrida,Contaduría Pública;Ingeniería Industrial,Análisis de datos;Auditoría;Excel avanzado;Logística,3,0,2027-03-03
+ORG-25,Universidad Virtual Costa Norte,Servicios,Sincelejo,Remota,Ingeniería de Sistemas;Administración de Empresas,Java;Atención al cliente;Python;Redes,1,0,2028-08-02

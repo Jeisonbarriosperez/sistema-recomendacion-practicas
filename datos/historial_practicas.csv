@@ -1,0 +1,301 @@
+id_practica,id_org,programa,periodo,nota_final,cambio_de_sitio
+PR-0001,ORG-01,Ingeniería de Sistemas,2024-2,3.8,No
+PR-0002,ORG-12,Contaduría Pública,2025-2,3.4,No
+PR-0003,ORG-10,Contaduría Pública,2025-1,4.6,No
+PR-0004,ORG-09,Administración de Empresas,2025-1,4.1,No
+PR-0005,ORG-05,Ingeniería Industrial,2024-1,4.3,No
+PR-0006,ORG-16,Administración de Empresas,2025-1,4.4,No
+PR-0007,ORG-21,Administración de Empresas,2025-2,4.0,No
+PR-0008,ORG-24,Contaduría Pública,2025-2,3.7,No
+PR-0009,ORG-23,Ingeniería Industrial,2025-1,3.5,No
+PR-0010,ORG-04,Administración de Empresas,2024-1,3.6,No
+PR-0011,ORG-05,Ingeniería Industrial,2026-1,4.0,No
+PR-0012,ORG-02,Ingeniería de Sistemas,2025-2,3.6,No
+PR-0013,ORG-05,Ingeniería Industrial,2025-1,4.1,No
+PR-0014,ORG-18,Ingeniería Industrial,2024-1,3.0,No
+PR-0015,ORG-24,Contaduría Pública,2024-2,3.8,No
+PR-0016,ORG-21,Administración de Empresas,2025-2,4.6,No
+PR-0017,ORG-16,Ingeniería de Sistemas,2025-2,3.8,No
+PR-0018,ORG-05,Administración de Empresas,2025-2,3.9,No
+PR-0019,ORG-13,Ingeniería Industrial,2026-1,5.0,No
+PR-0020,ORG-25,Ingeniería de Sistemas,2024-1,3.9,No
+PR-0021,ORG-20,Ingeniería de Sistemas,2024-2,4.7,No
+PR-0022,ORG-15,Administración de Empresas,2024-1,3.4,Sí
+PR-0023,ORG-12,Contaduría Pública,2025-2,4.2,No
+PR-0024,ORG-10,Contaduría Pública,2026-1,4.3,No
+PR-0025,ORG-05,Administración de Empresas,2024-1,4.5,No
+PR-0026,ORG-15,Administración de Empresas,2026-1,3.1,Sí
+PR-0027,ORG-09,Administración de Empresas,2026-1,4.1,No
+PR-0028,ORG-13,Ingeniería Industrial,2024-2,4.5,No
+PR-0029,ORG-16,Administración de Empresas,2025-1,4.2,No
+PR-0030,ORG-12,Contaduría Pública,2025-1,4.8,No
+PR-0031,ORG-23,Ingeniería Industrial,2025-2,3.7,No
+PR-0032,ORG-14,Ingeniería Industrial,2025-1,3.9,Sí
+PR-0033,ORG-19,Contaduría Pública,2025-1,3.8,No
+PR-0034,ORG-16,Administración de Empresas,2025-2,3.9,No
+PR-0035,ORG-21,Administración de Empresas,2024-2,4.4,No
+PR-0036,ORG-12,Ingeniería Industrial,2025-2,4.0,No
+PR-0037,ORG-01,Ingeniería de Sistemas,2025-2,3.2,No
+PR-0038,ORG-22,Ingeniería Industrial,2024-1,4.8,No
+PR-0039,ORG-14,Ingeniería Industrial,2025-1,3.5,No
+PR-0040,ORG-09,Contaduría Pública,2026-1,5.0,No
+PR-0041,ORG-07,Administración de Empresas,2025-1,4.4,No
+PR-0042,ORG-16,Administración de Empresas,2026-1,4.4,No
+PR-0043,ORG-13,Ingeniería Industrial,2025-1,5.0,No
+PR-0044,ORG-06,Administración de Empresas,2025-2,3.9,No
+PR-0045,ORG-05,Administración de Empresas,2024-1,3.6,No
+PR-0046,ORG-13,Ingeniería Industrial,2025-2,5.0,Sí
+PR-0047,ORG-21,Administración de Empresas,2025-1,3.6,No
+PR-0048,ORG-02,Ingeniería de Sistemas,2024-1,3.5,No
+PR-0049,ORG-05,Ingeniería Industrial,2026-1,4.0,No
+PR-0050,ORG-11,Ingeniería Industrial,2024-2,3.5,No
+PR-0051,ORG-22,Ingeniería Industrial,2025-1,4.7,No
+PR-0052,ORG-24,Contaduría Pública,2025-2,3.3,No
+PR-0053,ORG-20,Ingeniería de Sistemas,2024-1,4.7,No
+PR-0054,ORG-11,Ingeniería Industrial,2024-1,3.9,Sí
+PR-0055,ORG-22,Ingeniería Industrial,2025-1,5.0,No
+PR-0056,ORG-24,Ingeniería Industrial,2024-1,3.5,No
+PR-0057,ORG-11,Ingeniería Industrial,2026-1,3.2,No
+PR-0058,ORG-04,Ingeniería de Sistemas,2024-1,3.6,No
+PR-0059,ORG-10,Contaduría Pública,2026-1,4.5,No
+PR-0060,ORG-07,Administración de Empresas,2026-1,4.9,No
+PR-0061,ORG-19,Contaduría Pública,2026-1,4.0,No
+PR-0062,ORG-03,Ingeniería de Sistemas,2025-1,3.8,No
+PR-0063,ORG-13,Ingeniería Industrial,2026-1,4.3,No
+PR-0064,ORG-03,Ingeniería de Sistemas,2024-1,4.2,No
+PR-0065,ORG-17,Contaduría Pública,2025-2,4.6,No
+PR-0066,ORG-04,Ingeniería de Sistemas,2025-1,3.3,No
+PR-0067,ORG-08,Contaduría Pública,2025-1,3.9,No
+PR-0068,ORG-06,Contaduría Pública,2024-2,3.6,No
+PR-0069,ORG-07,Contaduría Pública,2024-1,3.9,No
+PR-0070,ORG-10,Contaduría Pública,2024-2,4.6,No
+PR-0071,ORG-08,Contaduría Pública,2025-2,4.4,No
+PR-0072,ORG-07,Contaduría Pública,2026-1,4.4,No
+PR-0073,ORG-06,Administración de Empresas,2025-1,3.3,No
+PR-0074,ORG-23,Ingeniería de Sistemas,2025-2,3.7,No
+PR-0075,ORG-24,Contaduría Pública,2025-2,3.9,Sí
+PR-0076,ORG-16,Administración de Empresas,2025-2,4.2,No
+PR-0077,ORG-13,Ingeniería Industrial,2026-1,4.6,No
+PR-0078,ORG-21,Administración de Empresas,2025-1,3.9,No
+PR-0079,ORG-24,Contaduría Pública,2025-1,4.0,Sí
+PR-0080,ORG-11,Ingeniería Industrial,2026-1,3.1,No
+PR-0081,ORG-05,Ingeniería Industrial,2024-2,4.2,No
+PR-0082,ORG-15,Administración de Empresas,2025-1,3.6,No
+PR-0083,ORG-14,Administración de Empresas,2025-1,3.7,No
+PR-0084,ORG-15,Administración de Empresas,2025-2,3.8,Sí
+PR-0085,ORG-23,Ingeniería Industrial,2024-1,3.5,Sí
+PR-0086,ORG-09,Contaduría Pública,2024-2,4.8,No
+PR-0087,ORG-05,Ingeniería Industrial,2026-1,3.9,Sí
+PR-0088,ORG-15,Administración de Empresas,2025-2,3.6,No
+PR-0089,ORG-01,Ingeniería de Sistemas,2025-2,3.4,No
+PR-0090,ORG-12,Contaduría Pública,2026-1,3.7,No
+PR-0091,ORG-04,Administración de Empresas,2026-1,3.5,No
+PR-0092,ORG-10,Contaduría Pública,2025-1,4.5,No
+PR-0093,ORG-11,Ingeniería Industrial,2025-1,3.3,No
+PR-0094,ORG-23,Ingeniería Industrial,2025-2,3.8,Sí
+PR-0095,ORG-09,Contaduría Pública,2024-1,4.4,No
+PR-0096,ORG-25,Administración de Empresas,2025-1,3.3,No
+PR-0097,ORG-03,Ingeniería de Sistemas,2025-2,4.7,No
+PR-0098,ORG-12,Ingeniería Industrial,2024-2,4.3,Sí
+PR-0099,ORG-20,Contaduría Pública,2026-1,4.6,Sí
+PR-0100,ORG-17,Contaduría Pública,2025-2,4.5,No
+PR-0101,ORG-15,Administración de Empresas,2025-2,3.3,No
+PR-0102,ORG-05,Ingeniería Industrial,2025-1,4.0,No
+PR-0103,ORG-01,Ingeniería de Sistemas,2026-1,3.8,No
+PR-0104,ORG-06,Administración de Empresas,2026-1,3.7,Sí
+PR-0105,ORG-18,Ingeniería Industrial,2025-1,3.8,No
+PR-0106,ORG-19,Contaduría Pública,2024-2,3.9,No
+PR-0107,ORG-25,Administración de Empresas,2026-1,4.0,No
+PR-0108,ORG-21,Administración de Empresas,2025-2,4.7,No
+PR-0109,ORG-15,Administración de Empresas,2025-1,3.6,No
+PR-0110,ORG-12,Ingeniería Industrial,2024-2,3.9,No
+PR-0111,ORG-14,Administración de Empresas,2025-2,3.5,Sí
+PR-0112,ORG-09,Administración de Empresas,2025-1,4.6,No
+PR-0113,ORG-09,Contaduría Pública,2026-1,4.5,No
+PR-0114,ORG-22,Ingeniería Industrial,2026-1,4.3,No
+PR-0115,ORG-06,Administración de Empresas,2025-1,3.8,No
+PR-0116,ORG-20,Ingeniería de Sistemas,2026-1,4.3,No
+PR-0117,ORG-13,Ingeniería Industrial,2025-1,3.9,No
+PR-0118,ORG-22,Ingeniería Industrial,2025-1,4.5,No
+PR-0119,ORG-14,Administración de Empresas,2026-1,3.4,No
+PR-0120,ORG-25,Administración de Empresas,2024-1,4.3,No
+PR-0121,ORG-15,Administración de Empresas,2024-2,3.6,No
+PR-0122,ORG-12,Ingeniería Industrial,2024-1,4.0,No
+PR-0123,ORG-18,Ingeniería de Sistemas,2025-2,3.6,No
+PR-0124,ORG-05,Ingeniería Industrial,2026-1,3.6,No
+PR-0125,ORG-01,Ingeniería de Sistemas,2024-2,4.0,No
+PR-0126,ORG-25,Ingeniería de Sistemas,2025-1,3.5,Sí
+PR-0127,ORG-20,Ingeniería de Sistemas,2025-2,4.5,Sí
+PR-0128,ORG-13,Ingeniería Industrial,2026-1,4.2,No
+PR-0129,ORG-07,Contaduría Pública,2024-1,4.7,No
+PR-0130,ORG-01,Ingeniería de Sistemas,2025-1,3.5,No
+PR-0131,ORG-18,Ingeniería de Sistemas,2025-1,3.5,No
+PR-0132,ORG-02,Ingeniería de Sistemas,2024-1,3.3,No
+PR-0133,ORG-12,Contaduría Pública,2026-1,4.5,No
+PR-0134,ORG-20,Contaduría Pública,2024-2,4.9,No
+PR-0135,ORG-19,Contaduría Pública,2026-1,3.7,No
+PR-0136,ORG-15,Administración de Empresas,2024-1,3.7,No
+PR-0137,ORG-14,Administración de Empresas,2024-2,3.8,No
+PR-0138,ORG-05,Administración de Empresas,2025-1,4.4,No
+PR-0139,ORG-03,Ingeniería de Sistemas,2025-1,4.2,No
+PR-0140,ORG-09,Contaduría Pública,2026-1,4.8,No
+PR-0141,ORG-24,Contaduría Pública,2025-2,3.2,Sí
+PR-0142,ORG-09,Administración de Empresas,2024-2,4.4,Sí
+PR-0143,ORG-03,Ingeniería de Sistemas,2026-1,4.1,Sí
+PR-0144,ORG-02,Ingeniería de Sistemas,2024-1,3.9,No
+PR-0145,ORG-15,Administración de Empresas,2025-2,4.1,No
+PR-0146,ORG-19,Contaduría Pública,2024-2,4.0,No
+PR-0147,ORG-05,Ingeniería Industrial,2025-2,4.3,No
+PR-0148,ORG-17,Contaduría Pública,2024-1,3.8,No
+PR-0149,ORG-21,Administración de Empresas,2026-1,4.5,No
+PR-0150,ORG-13,Ingeniería Industrial,2025-2,4.9,No
+PR-0151,ORG-19,Administración de Empresas,2025-2,3.7,Sí
+PR-0152,ORG-08,Contaduría Pública,2026-1,4.7,No
+PR-0153,ORG-24,Contaduría Pública,2025-2,3.7,Sí
+PR-0154,ORG-15,Administración de Empresas,2024-2,3.8,Sí
+PR-0155,ORG-15,Administración de Empresas,2024-1,4.6,No
+PR-0156,ORG-15,Administración de Empresas,2025-2,3.6,No
+PR-0157,ORG-15,Administración de Empresas,2025-2,3.8,Sí
+PR-0158,ORG-20,Contaduría Pública,2026-1,3.9,No
+PR-0159,ORG-15,Administración de Empresas,2026-1,3.3,Sí
+PR-0160,ORG-25,Ingeniería de Sistemas,2025-2,4.2,No
+PR-0161,ORG-02,Ingeniería de Sistemas,2025-1,4.6,No
+PR-0162,ORG-22,Ingeniería Industrial,2024-1,5.0,No
+PR-0163,ORG-23,Ingeniería Industrial,2025-1,3.3,No
+PR-0164,ORG-17,Contaduría Pública,2026-1,4.6,No
+PR-0165,ORG-18,Ingeniería de Sistemas,2025-2,3.5,No
+PR-0166,ORG-07,Contaduría Pública,2024-1,4.6,No
+PR-0167,ORG-25,Administración de Empresas,2026-1,3.8,No
+PR-0168,ORG-03,Ingeniería de Sistemas,2024-1,4.2,No
+PR-0169,ORG-06,Contaduría Pública,2025-1,2.8,No
+PR-0170,ORG-19,Administración de Empresas,2025-1,3.5,No
+PR-0171,ORG-21,Administración de Empresas,2025-2,4.1,No
+PR-0172,ORG-08,Contaduría Pública,2025-2,4.5,No
+PR-0173,ORG-21,Administración de Empresas,2025-1,4.3,No
+PR-0174,ORG-11,Ingeniería Industrial,2024-1,3.6,No
+PR-0175,ORG-10,Contaduría Pública,2026-1,4.8,No
+PR-0176,ORG-20,Ingeniería de Sistemas,2025-1,4.2,Sí
+PR-0177,ORG-24,Contaduría Pública,2025-1,3.9,Sí
+PR-0178,ORG-22,Ingeniería Industrial,2026-1,4.4,No
+PR-0179,ORG-06,Contaduría Pública,2024-2,3.0,No
+PR-0180,ORG-24,Contaduría Pública,2025-2,3.6,Sí
+PR-0181,ORG-08,Contaduría Pública,2025-2,4.3,No
+PR-0182,ORG-25,Administración de Empresas,2025-1,3.7,No
+PR-0183,ORG-23,Ingeniería Industrial,2025-2,3.4,Sí
+PR-0184,ORG-06,Administración de Empresas,2024-1,3.7,No
+PR-0185,ORG-03,Ingeniería de Sistemas,2025-2,4.9,No
+PR-0186,ORG-25,Administración de Empresas,2024-2,3.9,No
+PR-0187,ORG-11,Ingeniería Industrial,2024-1,3.1,No
+PR-0188,ORG-16,Administración de Empresas,2024-2,4.4,No
+PR-0189,ORG-09,Administración de Empresas,2024-1,3.9,No
+PR-0190,ORG-03,Ingeniería de Sistemas,2025-2,4.2,No
+PR-0191,ORG-02,Ingeniería de Sistemas,2024-2,4.2,No
+PR-0192,ORG-15,Administración de Empresas,2024-1,3.5,Sí
+PR-0193,ORG-20,Contaduría Pública,2025-2,4.9,No
+PR-0194,ORG-03,Ingeniería de Sistemas,2026-1,4.2,No
+PR-0195,ORG-25,Administración de Empresas,2025-1,4.0,Sí
+PR-0196,ORG-13,Ingeniería Industrial,2024-2,4.5,No
+PR-0197,ORG-02,Ingeniería de Sistemas,2026-1,4.2,No
+PR-0198,ORG-15,Administración de Empresas,2025-1,3.8,Sí
+PR-0199,ORG-06,Administración de Empresas,2026-1,3.8,No
+PR-0200,ORG-09,Administración de Empresas,2024-1,4.2,No
+PR-0201,ORG-04,Administración de Empresas,2026-1,3.4,Sí
+PR-0202,ORG-13,Ingeniería Industrial,2025-2,4.7,No
+PR-0203,ORG-21,Administración de Empresas,2024-1,4.2,No
+PR-0204,ORG-11,Ingeniería Industrial,2025-1,3.7,No
+PR-0205,ORG-23,Ingeniería Industrial,2025-1,3.0,Sí
+PR-0206,ORG-19,Contaduría Pública,2024-1,3.4,No
+PR-0207,ORG-08,Contaduría Pública,2025-2,4.5,No
+PR-0208,ORG-06,Administración de Empresas,2025-1,3.4,Sí
+PR-0209,ORG-17,Ingeniería de Sistemas,2025-2,4.4,No
+PR-0210,ORG-19,Contaduría Pública,2025-2,3.5,No
+PR-0211,ORG-12,Contaduría Pública,2024-2,4.6,No
+PR-0212,ORG-19,Contaduría Pública,2026-1,4.0,Sí
+PR-0213,ORG-22,Ingeniería Industrial,2025-2,5.0,No
+PR-0214,ORG-11,Ingeniería Industrial,2024-1,3.5,Sí
+PR-0215,ORG-09,Administración de Empresas,2025-2,4.7,No
+PR-0216,ORG-01,Ingeniería de Sistemas,2025-1,4.1,No
+PR-0217,ORG-15,Administración de Empresas,2024-1,3.6,No
+PR-0218,ORG-21,Administración de Empresas,2024-2,4.3,No
+PR-0219,ORG-10,Contaduría Pública,2025-1,4.9,No
+PR-0220,ORG-13,Ingeniería Industrial,2025-2,4.4,No
+PR-0221,ORG-02,Ingeniería de Sistemas,2026-1,3.9,No
+PR-0222,ORG-07,Administración de Empresas,2024-1,4.9,No
+PR-0223,ORG-06,Administración de Empresas,2025-2,3.7,Sí
+PR-0224,ORG-17,Ingeniería de Sistemas,2025-1,4.2,No
+PR-0225,ORG-09,Administración de Empresas,2024-1,4.6,Sí
+PR-0226,ORG-12,Ingeniería Industrial,2024-1,4.0,No
+PR-0227,ORG-03,Ingeniería de Sistemas,2024-1,4.7,No
+PR-0228,ORG-11,Ingeniería Industrial,2025-1,3.9,No
+PR-0229,ORG-16,Ingeniería de Sistemas,2026-1,4.1,No
+PR-0230,ORG-18,Ingeniería de Sistemas,2025-2,3.2,No
+PR-0231,ORG-18,Ingeniería Industrial,2025-2,3.7,No
+PR-0232,ORG-11,Ingeniería Industrial,2025-1,3.9,No
+PR-0233,ORG-23,Ingeniería de Sistemas,2024-1,3.4,Sí
+PR-0234,ORG-21,Administración de Empresas,2024-2,4.2,Sí
+PR-0235,ORG-22,Ingeniería Industrial,2024-2,4.7,No
+PR-0236,ORG-22,Ingeniería Industrial,2024-2,4.3,No
+PR-0237,ORG-03,Ingeniería de Sistemas,2024-2,4.2,No
+PR-0238,ORG-07,Administración de Empresas,2025-1,4.2,No
+PR-0239,ORG-20,Contaduría Pública,2025-1,4.6,No
+PR-0240,ORG-20,Ingeniería de Sistemas,2024-2,4.3,No
+PR-0241,ORG-18,Ingeniería de Sistemas,2025-1,3.7,No
+PR-0242,ORG-10,Contaduría Pública,2024-1,3.8,No
+PR-0243,ORG-16,Administración de Empresas,2025-1,4.0,No
+PR-0244,ORG-19,Administración de Empresas,2024-1,3.5,No
+PR-0245,ORG-04,Administración de Empresas,2025-1,3.0,Sí
+PR-0246,ORG-23,Ingeniería Industrial,2025-2,3.5,No
+PR-0247,ORG-16,Ingeniería de Sistemas,2024-1,4.5,No
+PR-0248,ORG-09,Contaduría Pública,2024-1,4.0,No
+PR-0249,ORG-08,Contaduría Pública,2025-1,4.3,No
+PR-0250,ORG-08,Contaduría Pública,2024-1,4.6,No
+PR-0251,ORG-17,Contaduría Pública,2024-1,4.9,No
+PR-0252,ORG-15,Administración de Empresas,2024-2,3.9,No
+PR-0253,ORG-11,Ingeniería Industrial,2026-1,3.6,Sí
+PR-0254,ORG-19,Administración de Empresas,2025-1,4.2,No
+PR-0255,ORG-09,Contaduría Pública,2024-1,4.1,No
+PR-0256,ORG-22,Ingeniería Industrial,2025-1,4.3,No
+PR-0257,ORG-22,Ingeniería Industrial,2024-2,5.0,No
+PR-0258,ORG-15,Administración de Empresas,2024-1,3.8,No
+PR-0259,ORG-24,Contaduría Pública,2024-1,3.3,Sí
+PR-0260,ORG-03,Ingeniería de Sistemas,2025-2,4.2,No
+PR-0261,ORG-08,Contaduría Pública,2025-2,4.7,No
+PR-0262,ORG-14,Administración de Empresas,2024-2,3.6,Sí
+PR-0263,ORG-08,Contaduría Pública,2024-2,4.5,No
+PR-0264,ORG-21,Administración de Empresas,2024-1,4.3,Sí
+PR-0265,ORG-06,Contaduría Pública,2024-2,4.3,Sí
+PR-0266,ORG-01,Ingeniería de Sistemas,2024-1,3.7,No
+PR-0267,ORG-06,Contaduría Pública,2026-1,4.0,No
+PR-0268,ORG-11,Ingeniería Industrial,2024-1,4.1,Sí
+PR-0269,ORG-20,Ingeniería de Sistemas,2024-2,4.6,No
+PR-0270,ORG-25,Administración de Empresas,2026-1,3.6,No
+PR-0271,ORG-23,Ingeniería Industrial,2025-1,3.0,Sí
+PR-0272,ORG-17,Ingeniería de Sistemas,2024-1,4.1,No
+PR-0273,ORG-11,Ingeniería Industrial,2024-2,4.1,No
+PR-0274,ORG-07,Contaduría Pública,2024-1,5.0,No
+PR-0275,ORG-25,Ingeniería de Sistemas,2025-2,3.2,Sí
+PR-0276,ORG-15,Administración de Empresas,2024-1,3.6,Sí
+PR-0277,ORG-24,Ingeniería Industrial,2025-1,3.6,No
+PR-0278,ORG-22,Ingeniería Industrial,2025-2,5.0,No
+PR-0279,ORG-09,Administración de Empresas,2025-2,4.2,No
+PR-0280,ORG-15,Administración de Empresas,2024-1,3.4,No
+PR-0281,ORG-25,Ingeniería de Sistemas,2025-1,4.1,No
+PR-0282,ORG-22,Ingeniería Industrial,2024-1,3.7,No
+PR-0283,ORG-06,Administración de Empresas,2024-2,3.8,Sí
+PR-0284,ORG-24,Contaduría Pública,2025-1,3.2,Sí
+PR-0285,ORG-05,Administración de Empresas,2025-2,5.0,No
+PR-0286,ORG-08,Contaduría Pública,2025-1,4.2,No
+PR-0287,ORG-01,Ingeniería de Sistemas,2025-1,4.0,No
+PR-0288,ORG-05,Administración de Empresas,2024-1,4.5,No
+PR-0289,ORG-06,Contaduría Pública,2024-1,3.7,Sí
+PR-0290,ORG-16,Ingeniería de Sistemas,2026-1,4.0,No
+PR-0291,ORG-19,Administración de Empresas,2024-2,4.0,No
+PR-0292,ORG-06,Administración de Empresas,2025-1,3.2,No
+PR-0293,ORG-15,Administración de Empresas,2026-1,3.5,No
+PR-0294,ORG-19,Contaduría Pública,2024-2,3.8,Sí
+PR-0295,ORG-15,Administración de Empresas,2025-2,3.4,No
+PR-0296,ORG-12,Contaduría Pública,2024-1,4.4,No
+PR-0297,ORG-05,Ingeniería Industrial,2024-1,3.4,No
+PR-0298,ORG-01,Ingeniería de Sistemas,2026-1,4.0,No
+PR-0299,ORG-10,Contaduría Pública,2025-1,4.5,No
+PR-0300,ORG-13,Ingeniería Industrial,2025-2,4.7,No
