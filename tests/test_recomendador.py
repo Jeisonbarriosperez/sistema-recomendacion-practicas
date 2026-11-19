@@ -2,11 +2,11 @@
 Pruebas del motor de recomendación.
 
 Cada prueba comprueba una regla o un comportamiento del sistema. Las primeras usan
-casos armados a mano (un estudiante y una organización de ejemplo) para que el
+casos armados a mano un estudiante y una organización de ejemplo para que el
 resultado esperado se pueda calcular sin computador. Las últimas usan los datos
 del prototipo para revisar el sistema completo.
 
-Ejecutar desde la carpeta del proyecto:  python -m pytest -v
+comando de pruebas:  python -m pytest -v
 """
 from datetime import date
 import sys
